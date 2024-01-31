@@ -5,7 +5,7 @@ const Home = () => {
    <>
   <div className=" flex flex-row flex-wrap gap-9 pl-9">
   {[1].map((item)=>(
-    <div className="max-w-sm rounded overflow-hidden shadow-lg ">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer">
     <img className="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains"/>
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
