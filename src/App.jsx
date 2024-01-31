@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home.jsx"
 import Navbar from "./Navbar.jsx"
+import TImeLine from "./components/TImeLine.jsx"
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
           <Navbar/>
         <Routes>
         <Route path='/' element={<Home/>}></Route>
+        <Route path='/timeline' element={<TImeLine/>}></Route>
         </Routes>
 
        </Router>
