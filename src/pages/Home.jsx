@@ -1,11 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import timeline from "../assets/timeline.png"
 
 const data=[
   {
     id:1,
-    img:"https://v1.tailwindcss.com/img/card-top.jpg",
+    img:timeline,
     desc:"The Timeline component visually represents events or milestones chronologically, providing a structured and intuitive way to showcase temporal information in a linear fashion. It typically consists of date markers and associated content, offering a cohesive overview of a progression of events.",
     tags:[
       "timeline",
