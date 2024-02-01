@@ -1,8 +1,21 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Frontend Daily
 
-Currently, two official plugins are available:
+ The project includes various components commonly used in company  websites.The whole purpose of these to showcase my skills as a Frontend developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Demo 
+
+https://frontend-daily-theta.vercel.app/
+
+
+## Tech Stack
+
+**Client:** React ,TailwindCSS
+
+
+
+
+## 🚀 About Me
+I'm a frontend  developer who is passionate about building delightful ui experiences.
+
