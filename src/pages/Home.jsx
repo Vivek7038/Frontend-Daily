@@ -29,7 +29,7 @@ const Home = () => {
         <div className=" flex flex-row flex-wrap gap-9 pl-9 pr-9 h-full ">
           {data.map((item) => (
             <div
-              className="max-w-sm  rounded  shadow-lg cursor-pointer"
+              className="max-w-sm  border rounded-lg shadow-lg cursor-pointer"
               key={item.id}
               onClick={() => handleClick(item.name)}
             >
