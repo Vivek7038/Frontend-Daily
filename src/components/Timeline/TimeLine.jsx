@@ -50,7 +50,7 @@ const events = [
 const TimeLine = () => {
   return (
     <>
-      <div className="flex flex-col ">
+      <div className="flex flex-col pl-3 pr-3 ">
       <div className="text-center mx-auto font-bold text-4xl">Timeline </div>
         <div className="flex flex-col gap-y-3 w-full my-4 ">
           {events.map((event, key) => (

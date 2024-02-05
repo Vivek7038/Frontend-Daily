@@ -31,7 +31,7 @@ const Home = () => {
  }
   return (
    <>
-  <div className=" flex flex-row flex-wrap gap-9 pl-9">
+  <div className=" flex flex-row flex-wrap gap-9 pl-9 pr-9">
   {data.map((item)=>(
     <div className="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer" key={item.id} onClick={()=>handleClick(item.name)}>
     <img className="w-full h-1/3" src={item.img} alt="Sunset in the mountains"/>
