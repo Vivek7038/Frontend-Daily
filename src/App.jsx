@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home.jsx"
 import Navbar from "./Navbar.jsx"
-import TimeLine from "./components/TImeLine.jsx";
+import TimeLine from "./components/Timeline/TimeLine.jsx";
+import Accordion from "./components/Accordion/Accordion.jsx";
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
         <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/timeline' element={<TimeLine/>}></Route>
+        <Route path='/accordion' element={<Accordion/>}></Route>
         </Routes>
 
        </Router>
