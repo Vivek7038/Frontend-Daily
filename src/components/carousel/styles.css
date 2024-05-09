@@ -25,8 +25,8 @@
      
      .slide.active {
        display: block;
-       animation-name: fade;
-       animation-duration: 1.5s;
+       /* animation-name: fade; */
+       /* animation-duration: 1.5s; */
      }
      
      .slide img {

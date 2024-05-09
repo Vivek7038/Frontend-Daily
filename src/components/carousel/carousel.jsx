@@ -2,6 +2,9 @@ import "./styles.css";
 import { useState } from "react";
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion"
+import { useEffect } from "react";
+
 export default function Carousel() {
   const images = [
     {
@@ -39,19 +42,29 @@ const SlideShow = ({ images }) => {
   const onNext = () => {
     if (active < images.length - 1) {
       setActive(active + 1);
+    }else{
+       setActive(0);
     }
   };
 
   const onPrev = () => {
     if (active > 0) {
       setActive(active - 1);
+    }else{
+      setActive(images.length-1);
     }
   };
+  useEffect(() => {
+       const interval = setInterval(() => {
+         setActive((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+       }, 5000); 
+       return () => clearInterval(interval);
+     }, []);
 
   return (
     <div className="slideshow">
       {images.map((e, i) => (
-        <Slide {...e} key={e.caption} active={i === active} i={i}/>
+        <Slide {...e} key={e.caption} active={i === active} i={i} />
       ))}
       <div className="bulleted-navigation">
         {images.map((e, i) => (
@@ -74,12 +87,21 @@ const SlideShow = ({ images }) => {
   );
 };
 
-const Slide = ({ image_url, caption, active ,i}) => {
+const Slide = ({ image_url, caption, active, i }) => {
   return (
     <div className={`slide ${active ? "active" : ""}`}>
-      <img src={image_url} alt={caption} className=""/>
+      {/* <img src={image_url} alt={caption} className="" /> */}
+      <AnimatePresence>
+        <motion.img
+          key={image_url}
+          src={image_url}
+          initial={{ x: 300, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: -300, opacity: 0 }}
+        />
+      </AnimatePresence>
       <span className="">{caption}</span>
-      <p>{`${i+1}/4`}</p>
+      <p>{`${i + 1}/4`}</p>
     </div>
   );
 };
