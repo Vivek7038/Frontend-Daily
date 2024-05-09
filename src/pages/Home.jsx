@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import timeline from "../assets/timeline.png";
 import accordion from "../assets/accordion.png";
+import carousel from "../assets/carousel.jpg"
 const data = [
   {
     id: 1,
@@ -16,6 +17,13 @@ const data = [
     desc: "The accordion component is used to generate vertically stacked content in a page. It is intended to save vertical space by hiding content, reducing scrolling. Accordions contains labels with the relevant information. Users can click on the accordion to read additional information.",
     tags: ["accordion"],
     name: "accordion",
+  },
+  {
+    id: 3,
+    img: carousel,
+    desc: "A carousel component is a front-end component that displays a list of images or other content as a scrollable catalog. ",
+    tags: ["Carousel","Slideshow"],
+    name: "carousel",
   },
 ];
 const Home = () => {
