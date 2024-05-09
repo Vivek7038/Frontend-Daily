@@ -1,0 +1,87 @@
+.App {
+       font-family: sans-serif;
+       text-align: center;
+     }
+     
+     .slideshow {
+       position: relative;
+       max-width: 500px;
+       margin: 20px auto;
+     }
+     
+     .slide {
+       position: relative;
+       display: none;
+     }
+     
+     @keyframes fade {
+       from {
+         opacity: 0.4;
+       }
+       to {
+         opacity: 1;
+       }
+     }
+     
+     .slide.active {
+       display: block;
+       animation-name: fade;
+       animation-duration: 1.5s;
+     }
+     
+     .slide img {
+       max-width: 100%;
+     }
+     
+     .slide span {
+       position: absolute;
+       left: 50%;
+       bottom: 20px;
+       transform: translateX(-50%);
+       color: #fff;
+     }
+     .slide p {
+       position: absolute;
+       left: 4%;
+       top: 2px;
+       transform: translateX(-50%);
+       color: #fff;
+     }
+     
+     .bulleted-navigation {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 4px;
+     }
+     
+     .dot {
+       width: 30px;
+       height: 30px;
+       border-radius: 50%;
+       background-color: grey;
+       margin: 0 3px;
+       transition: all 0.2s ease;
+       cursor: pointer;
+     }
+     
+     .dot.active {
+       background-color: skyblue;
+     }
+     
+     .navigation {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-100%);
+       font-size: 2em;
+       cursor: pointer;
+     }
+     
+     .prev {
+       left: 10px;
+     }
+     
+     .next {
+       right: 10px;
+     }
+     
