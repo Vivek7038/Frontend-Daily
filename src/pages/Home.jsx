@@ -2,7 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import timeline from "../assets/timeline.png";
 import accordion from "../assets/accordion.png";
-import carousel from "../assets/carousel.jpg"
+import carousel from "../assets/carousel.jpg";
+import multiselect from "../assets/multi-select-search.png";
 const data = [
   {
     id: 1,
@@ -22,8 +23,15 @@ const data = [
     id: 3,
     img: carousel,
     desc: "A carousel component is a front-end component that displays a list of images or other content as a scrollable catalog. ",
-    tags: ["Carousel","Slideshow"],
+    tags: ["Carousel", "Slideshow"],
     name: "carousel",
+  },
+  {
+    id: 4,
+    img: multiselect,
+    desc: "A multi-select search component is a web component that lets users select multiple items from a list, and also lets them search for options.",
+    tags: ["multiselect", "Search"],
+    name: "multi-select-search",
   },
 ];
 const Home = () => {
